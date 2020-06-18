@@ -4,7 +4,10 @@
   "description": "UI End 2 End Testing with Cucumber and Selenium",
   "main": "index.js",
   "scripts": {
-    "test": "cucumberjs"
+    "test": "cucumber-js test/features/ -f json:test/report/cucumber_report.json",
+    "report": "node index.js",
+    "clean": "tsc --build --clean",
+    "build": "tsc --build"
   },
   "repository": {
     "type": "git",
