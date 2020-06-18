@@ -25,6 +25,10 @@
   },
   "homepage": "https://github.com/sulzer-stuttgart/cucumber-js-selenium#readme",
   "devDependencies": {
-    "cucumber": "^6.0.5"
+    "chai": "^4.2.0",
+    "chromedriver": "^83.0.0",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.2.0",
+    "selenium-webdriver": "^4.0.0-alpha.7"
   }
 }

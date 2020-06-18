@@ -20,13 +20,13 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "I enter Porsche ID 'mustafa@sulzer.de'",
+            "name": "I enter Porsche ID 'mustafa.masetic@sulzer.de'",
             "match": {
-              "location": "test/features/step_definitions/LoginSteps.js:4"
+              "location": "test/features/step_definitions/LoginSteps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 2600000000
             }
           },
           {
@@ -35,20 +35,44 @@
             "line": 6,
             "name": "I enter password 'Password1!'",
             "match": {
-              "location": "test/features/step_definitions/LoginSteps.js:7"
+              "location": "test/features/step_definitions/LoginSteps.js:63"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click on login",
+            "match": {
+              "location": "test/features/step_definitions/LoginSteps.js:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2161000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 7,
+            "line": 8,
             "name": "I should be logged",
             "match": {
-              "location": "test/features/step_definitions/LoginSteps.js:10"
+              "location": "test/features/step_definitions/LoginSteps.js:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1859000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "test/features/step_definitions/LoginSteps.js:104"
             },
             "result": {
               "status": "passed",
