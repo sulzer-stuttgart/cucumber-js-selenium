@@ -1,0 +1,24 @@
+{
+  "name": "cucumber-js-selenium",
+  "version": "1.0.0",
+  "description": "UI End 2 End Testing with Cucumber and Selenium",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumberjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sulzer-stuttgart/cucumber-js-selenium.git"
+  },
+  "keywords": [
+    "Cucumber",
+    "Selenium",
+    "Typescript"
+  ],
+  "author": "Mustafa Masetic",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/sulzer-stuttgart/cucumber-js-selenium/issues"
+  },
+  "homepage": "https://github.com/sulzer-stuttgart/cucumber-js-selenium#readme"
+}
