@@ -1,0 +1,62 @@
+[
+  {
+    "description": "  Login to My Porsche Portal",
+    "keyword": "Feature",
+    "name": "Login",
+    "line": 1,
+    "id": "login",
+    "tags": [],
+    "uri": "test/features/login.feature",
+    "elements": [
+      {
+        "id": "login;login-with-porsche-id-account",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login with Porsche ID Account",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I enter Porsche ID 'mustafa@sulzer.de'",
+            "match": {
+              "location": "test/features/step_definitions/LoginSteps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I enter password 'Password1!'",
+            "match": {
+              "location": "test/features/step_definitions/LoginSteps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should be logged",
+            "match": {
+              "location": "test/features/step_definitions/LoginSteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
