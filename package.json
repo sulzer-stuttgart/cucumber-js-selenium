@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/sulzer-stuttgart/cucumber-js-selenium/issues"
   },
-  "homepage": "https://github.com/sulzer-stuttgart/cucumber-js-selenium#readme"
+  "homepage": "https://github.com/sulzer-stuttgart/cucumber-js-selenium#readme",
+  "devDependencies": {
+    "cucumber": "^6.0.5"
+  }
 }
