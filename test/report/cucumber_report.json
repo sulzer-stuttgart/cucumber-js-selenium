@@ -11,7 +11,7 @@
       {
         "id": "login;login-with-porsche-id-accounts",
         "keyword": "Scenario",
-        "line": 13,
+        "line": 4,
         "name": "Login with Porsche ID Accounts",
         "tags": [],
         "type": "scenario",
@@ -37,7 +37,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3806000000
+              "duration": 1768000000
             }
           },
           {
@@ -50,7 +50,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 246000000
+              "duration": 642000000
             }
           },
           {
@@ -63,7 +63,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 104000000
+              "duration": 89000000
             }
           },
           {
@@ -76,7 +76,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1899000000
+              "duration": 1999000000
             }
           },
           {
@@ -89,201 +89,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3354000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "test/features/support/hooks.js:59"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 55000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "login;login-with-porsche-id-accounts",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Login with Porsche ID Accounts",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "match": {
-              "location": "test/features/support/hooks.js:46"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I am on Porsche login page",
-            "match": {
-              "location": "test/features/step_definitions/LoginSteps.js:42"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2047000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "I enter Porsche ID mmasetic+1593161219@gmail.com",
-            "match": {
-              "location": "test/features/step_definitions/LoginSteps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 206000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "I enter password Password1!",
-            "match": {
-              "location": "test/features/step_definitions/LoginSteps.js:69"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 100000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "I click on login",
-            "match": {
-              "location": "test/features/step_definitions/LoginSteps.js:84"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2066000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "I should be logged in as a Test2 Test2",
-            "match": {
-              "location": "test/features/step_definitions/LoginSteps.js:99"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3401000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "test/features/support/hooks.js:59"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 54000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "login;login-with-porsche-id-accounts",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Login with Porsche ID Accounts",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "match": {
-              "location": "test/features/support/hooks.js:46"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I am on Porsche login page",
-            "match": {
-              "location": "test/features/step_definitions/LoginSteps.js:42"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2002000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "I enter Porsche ID mmasetic+1593161253@gmail.com",
-            "match": {
-              "location": "test/features/step_definitions/LoginSteps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 207000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "I enter password Password1!",
-            "match": {
-              "location": "test/features/step_definitions/LoginSteps.js:69"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 102000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "I click on login",
-            "match": {
-              "location": "test/features/step_definitions/LoginSteps.js:84"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1667000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "I should be logged in as a Test3 Test3",
-            "match": {
-              "location": "test/features/step_definitions/LoginSteps.js:99"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3999000000
+              "duration": 3551000000
             }
           },
           {
