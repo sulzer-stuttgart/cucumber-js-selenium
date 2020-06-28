@@ -104,5 +104,4 @@ dist
 .tern-port
 
 .idea
-env.ts
 test/report

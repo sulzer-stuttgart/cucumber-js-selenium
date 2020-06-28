@@ -4,8 +4,8 @@
   "description": "UI End 2 End Testing with Cucumber and Selenium",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test/features/ -f json:test/report/cucumber_report.json",
-    "test:browserstack" : "CONFIG_FILE=bs-config cucumber-js test/features/login.feature",
+    "test:local": "CONFIG_FILE=local-config cucumber-js test/features/ -f json:test/report/cucumber_report.json",
+    "test:browserstack": "CONFIG_FILE=bs-config cucumber-js test/features/login.feature",
     "report": "node index.js",
     "clean": "tsc --build --clean",
     "build": "tsc --build"
@@ -30,6 +30,7 @@
     "chromedriver": "^83.0.0",
     "cucumber": "^6.0.5",
     "cucumber-html-reporter": "^5.2.0",
+    "selenium-standalone": "^6.17.0",
     "selenium-webdriver": "^4.0.0-alpha.7"
   }
 }
