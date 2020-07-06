@@ -2,6 +2,7 @@
 var config_file = '../../../conf/' + process.env.CONFIG_FILE + '.conf.js';
 var config = require(config_file).config;
 import {Builder} from 'selenium-webdriver'
+var chrome = require("selenium-webdriver/chrome")
 import { Scenario, Status, Before, BeforeAll, After, AfterAll} from 'cucumber'
 
 var username = process.env.BROWSERSTACK_USERNAME || config.user;
@@ -18,9 +19,14 @@ Before(function (scenario) {
         caps['name'] = scenario.pickle.name;
         }
 
+    var chromeOptions = new chrome.Options();
+    chromeOptions.addArguments('--headless');
+
     this.driver = new Builder()
         .usingServer('http://' + config.server + '/wd/hub')
-        .withCapabilities(caps)
+        //.withCapabilities(caps)
+        .setChromeOptions(chromeOptions)
+        .forBrowser('chrome')
         .build();
 });
 
