@@ -1,34 +1,14 @@
-version: 2.1
-orbs:
-  slack: circleci/slack@0.1.0
-  node: circleci/node@1.1.6
-  browser-tools: circleci/browser-tools@1.0.1
 jobs:
-  notify-slack:
-    executor:
-      name: alpine
+  build:
+    docker:
+      - image: <docker image>
     steps:
-      - slack/notify:
-          message: This is a custom message notification
+      - run: exit 0
+      - slack/status:
+          fail_only: true
+          mentions: 'USERID1,USERID2'
+          only_for_branches: only_for_branches
           webhook: SLACK_WEBHOOK
-          
-  build-and-test:
-    executor:
-      name: node/default
-    steps:
-      - checkout
-      - browser-tools/install-chrome
-      - browser-tools/install-chromedriver
-      - node/with-cache:
-          steps:
-            - run: npm install
-            - run: npm install typescript --save-dev
-            - run: npm run build
-            - run: npm run test
-workflows:
-    notify-slack:
-      jobs:
-        - notify-slack
-    build-and-test:
-      jobs:
-        - build-and-test
+orbs:
+  slack: circleci/slack@x.y.z
+version: 2.1
