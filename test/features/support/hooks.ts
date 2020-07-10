@@ -9,6 +9,8 @@ var username = process.env.BROWSERSTACK_USERNAME || config.user;
 var accessKey = process.env.BROWSERSTACK_ACCESS_KEY || config.key;
 var build = `Regression - ${new Date().toLocaleString()}`;
 
+require('chromedriver');
+
 Before(function (scenario) {
     var caps = config.capabilities;
 
@@ -23,7 +25,7 @@ Before(function (scenario) {
     chromeOptions.addArguments('--headless');
 
     this.driver = new Builder()
-        .usingServer('http://' + config.server + '/wd/hub')
+       // .usingServer('http://' + config.server + '/wd/hub')
         //.withCapabilities(caps)
         .setChromeOptions(chromeOptions)
         .forBrowser('chrome')
