@@ -5,6 +5,8 @@ orbs:
   browser-tools: circleci/browser-tools@1.0.1
 jobs:
   notify-slack:
+    executor:
+      name: alpine
     steps:
       - slack/notify:
           channel: CHANNELID
