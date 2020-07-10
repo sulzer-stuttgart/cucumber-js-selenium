@@ -16,8 +16,6 @@ jobs:
           steps:
             - slack/notify:
                 message: Starting E2E Test
-                success_message: ':tada: A $CIRCLE_JOB job has succeeded!'
-                failure_message: ':red_circle: A $CIRCLE_JOB job has failed!'
                 mentions: '@channel'
             - run: npm install
             - run: npm install typescript --save-dev
