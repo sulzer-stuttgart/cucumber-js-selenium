@@ -26,6 +26,9 @@ jobs:
             - run: npm run build
             - run: npm run test
 workflows:
+    notify-slack:
+      jobs:
+        - notify-slack
     build-and-test:
       jobs:
         - build-and-test
