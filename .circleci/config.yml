@@ -13,11 +13,6 @@ jobs:
       - browser-tools/install-chromedriver
       - node/with-cache:
           steps:
-            - slack/notify:
-                channel: deployment
-                color: '#42e2f4'
-                message: This is a custom message notification
-                webhook: webhook
             - run: npm install
             - run: npm install typescript --save-dev
             - run: npm run build
