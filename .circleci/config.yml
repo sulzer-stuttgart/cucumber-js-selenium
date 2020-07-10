@@ -15,12 +15,17 @@ jobs:
       - node/with-cache:
           steps:
             - slack/notify:
-                message: Starting E2E Test
+                message: Starting E2E Tests
                 mentions: '@channel'
             - run: npm install
             - run: npm install typescript --save-dev
             - run: npm run build
             - run: npm run test
+            - slack/status:
+                message: E2E Tests excution completed
+                success_message: ':tada: A $CIRCLE_JOB job has succeeded!'
+                failure_message: ':red_circle: A $CIRCLE_JOB job has failed!'
+                mentions: '@channel'
       - store_test_results:
               path: test_results
 workflows:
