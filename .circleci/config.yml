@@ -9,11 +9,8 @@ jobs:
       name: alpine
     steps:
       - slack/notify:
-          channel: CHANNELID
-          color: '#42e2f4'
-          mentions: 'USERID1,USERID2,'
           message: This is a custom message notification
-          webhook: webhook
+          webhook: SLACK_WEBHOOK
           
   build-and-test:
     executor:
