@@ -9,14 +9,14 @@ jobs:
       name: node/default
       
     steps:
+      - slack/notify:
+          message: Starting E2E Tests
+          mentions: 'channel'
       - checkout
       - browser-tools/install-chrome
       - browser-tools/install-chromedriver
       - node/with-cache:
           steps:
-            - slack/notify:
-                message: Starting E2E Tests
-                mentions: 'channel'
             - run: npm install
             - run: npm install typescript --save-dev
             - run: npm run build
