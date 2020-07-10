@@ -1,7 +1,5 @@
 jobs:
   build:
-    docker:
-      - image: <docker image>
     steps:
       - run: exit 0
       - slack/status:
@@ -10,5 +8,5 @@ jobs:
           only_for_branches: only_for_branches
           webhook: SLACK_WEBHOOK
 orbs:
-  slack: circleci/slack@x.y.z
+  slack: circleci/slack@0.1.0
 version: 2.1
