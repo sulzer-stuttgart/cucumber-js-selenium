@@ -14,9 +14,8 @@ jobs:
       - node/with-cache:
           steps:
             - slack/notify:
-                channel: CHANNELID
+                channel: deployment
                 color: '#42e2f4'
-                mentions: 'USERID1,USERID2,'
                 message: This is a custom message notification
                 webhook: webhook
             - run: npm install
