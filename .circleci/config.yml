@@ -22,7 +22,6 @@ jobs:
             - run: npm run build
             - run: npm run test
             - slack/status:
-                message: E2E Tests excution completed
                 success_message: ':tada: A $CIRCLE_JOB job has succeeded!'
                 failure_message: ':red_circle: A $CIRCLE_JOB job has failed!'
                 mentions: 'channel'
