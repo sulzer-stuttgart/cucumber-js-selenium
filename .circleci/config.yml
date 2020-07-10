@@ -4,6 +4,15 @@ orbs:
   node: circleci/node@1.1.6
   browser-tools: circleci/browser-tools@1.0.1
 jobs:
+  notify-slack:
+    steps:
+      - slack/notify:
+          channel: CHANNELID
+          color: '#42e2f4'
+          mentions: 'USERID1,USERID2,'
+          message: This is a custom message notification
+          webhook: webhook
+          
   build-and-test:
     executor:
       name: node/default
@@ -20,9 +29,5 @@ jobs:
 workflows:
     build-and-test:
       jobs:
+        - slack/notify
         - build-and-test
-    your-workflow:
-      jobs:
-        - slack/approval-notification:
-            message: Pending approval
-            webhook: webhook
