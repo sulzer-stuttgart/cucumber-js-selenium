@@ -3,12 +3,16 @@ jobs:
     name: node/default
   build:
     steps:
-      - run: exit 0
-      - slack/status:
-          fail_only: true
-          mentions: 'USERID1,USERID2'
-          only_for_branches: only_for_branches
+      - slack/notify:
+          channel: CHANNELID
+          color: '#42e2f4'
+          mentions: 'USERID1,USERID2,'
+          message: This is a custom message notification
           webhook: SLACK_WEBHOOK
 orbs:
   slack: circleci/slack@0.1.0
 version: 2.1
+workflows:
+  build:
+    jobs:
+      - build
