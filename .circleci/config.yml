@@ -14,7 +14,8 @@ jobs:
       - browser-tools/install-chromedriver
       - node/with-cache:
           steps:
-            - slack/notify
+            - slack/notify:
+                message: Starting E2E Test in cucumber-js-selenium Project
             - run: npm install
             - run: npm install typescript --save-dev
             - run: npm run build
