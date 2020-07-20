@@ -13,3 +13,5 @@ Feature: Login on P
       | mmasetic+1593161175@gmail.com | Password1! | Test Test   |
       | mmasetic+1593161219@gmail.com | Password1! | Test2 Test2 |
       | mmasetic+1593161253@gmail.com | Password1! | Test3 Test3 |
+      | mmasetic+1593161253@gmail.com | Password1! | Test4 Test4 |
+
