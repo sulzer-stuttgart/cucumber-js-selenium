@@ -20,7 +20,9 @@ jobs:
             - run: npm install
             - run: npm install typescript --save-dev
             - run: npm run build
-            - run: npm run test > test_results/tests.cucumber 
+            - run: npm run test > test_results/export.cucumber 
+            - command:  cat test_results/export.cucumber  |  nl | sed  "1d;2d;3d" > test_results/tests.cucumber
+            - command:  rm test_results/export.cucumber 
             - slack/status:
                 success_message: ':tada: A $CIRCLE_JOB job has succeeded!'
                 failure_message: ':red_circle: A $CIRCLE_JOB job has failed!'
