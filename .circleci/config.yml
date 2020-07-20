@@ -27,7 +27,7 @@ jobs:
                 failure_message: ':red_circle: A $CIRCLE_JOB job has failed!'
                 mentions: 'channel'
       - store_test_results:
-              path: test/report/cucumber_report.json
+              path: test/report/
       - store_artifacts:
               path: test/report/cucumber_report.html
 workflows:
