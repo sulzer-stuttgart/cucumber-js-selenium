@@ -4,7 +4,7 @@
   "description": "UI End 2 End Testing with Cucumber and Selenium",
   "main": "index.js",
   "scripts": {
-    "test": "CONFIG_FILE=local-config ./node_modules/.bin/cucumber-js test/features/ --format json",
+    "test": "CONFIG_FILE=local-config ./node_modules/.bin/cucumber-js test/features/ --format pretty --format json --out test_results/tests.cucumber",
     "test:local": "CONFIG_FILE=local-config cucumber-js test/features/ -f json:test/report/cucumber_report.json",
     "test:browserstack": "CONFIG_FILE=bs-config cucumber-js test/features/login.feature",
     "report": "node index.js",
